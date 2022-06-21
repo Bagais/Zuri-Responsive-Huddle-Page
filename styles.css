@@ -8,6 +8,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    /* width: 100%; */
 }
 h1, h3 {
     font-family: 'Poppins', sans-serif;
@@ -29,6 +30,61 @@ header {
     margin-bottom: 3rem;
     height: 100vh;
 }
+.htop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin:5rem auto 3rem;
+}
+.htop button {
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 0.5rem hsl(220, 12%, 85%);
+    background-color: white;
+    border: none;
+    color:hsl(192, 100%, 9%);
+    transition: color 1s ease;
+}
+.htop button:hover {
+    color:hsl(208, 11%, 55%);
+}
+.hbottom {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.hbottom-left {
+    width: 50%;
+    padding-right: 1.5rem;
+    color: hsl(192, 100%, 9%);
+}
+.hbottom-left h1 {
+    margin-bottom: 1.5rem;
+}
+.hbottom-left p {
+    margin-bottom: 1.5rem;
+}
+.hbottom-left button {
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: background-color 2s ease;
+}
+.hbottom-left button:hover {
+    background-color: hsl(322, 100%, 80%);
+    transition: background-color 2s ease;
+}
+
+.hbottom-right {
+    width: 50%;
+}
+.hbottom-right img{
+    width: 100%;
+}
 
 main {
     width: 80%;
@@ -46,73 +102,7 @@ main h3 {
 main p {
     color: hsl(208, 11%, 55%);
 }
-
-footer {
-    width: 100%;
-    color: hsl(193, 100%, 96%);
-    background-color: hsl(192, 100%, 9%);
-    display: flex;
-    flex-direction: column;
-    padding: 7rem 0 2rem;
-}
-
-.headT {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 80%;
-    margin:5rem auto 3rem;
-}
-.headT button {
-    padding: 1rem 2.5rem;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 0.5rem hsl(220, 12%, 85%);
-    background-color: white;
-    border: none;
-    color:hsl(192, 100%, 9%);
-    transition: color 1s ease;
-}
-.headT button:hover {
-    color:hsl(208, 11%, 55%);
-}
-.headB {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    align-items: center;
-}
-.mnLft {
-    width: 50%;
-    padding-right: 1.5rem;
-    color: hsl(192, 100%, 9%);
-}
-.mnLft h1 {
-    margin-bottom: 1.5rem;
-}
-.mnLft p {
-    margin-bottom: 1.5rem;
-}
-.mnLft button {
-    background-color: hsl(322, 100%, 66%);
-    color: hsl(193, 100%, 96%);
-    border: none;
-    padding: 1rem 3rem;
-    border-radius: 2rem;
-    transition: background-color 2s ease;
-}
-.mnLft button:hover {
-    background-color: hsl(322, 100%, 80%);
-    transition: background-color 2s ease;
-}
-
-.mnRgt {
-    width: 50%;
-}
-.mnRgt img{
-    width: 100%;
-}
-
-.mainT {
+.content-grow {
     box-shadow: 0px 0px 1rem hsl(220, 12%, 85%);
     height: 55vh;
     display: flex;
@@ -120,15 +110,15 @@ footer {
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
 }
-.mnLft {
+.lcgrow {
     width: 50%;
     padding: 0 8rem;
 }
-.mnRgt {
+.rcgrow {
     width: 50%;
     padding: 1rem;
 }
-.midUp {
+.content-flow {
     box-shadow: 0px 0px 1rem hsl(220, 12%, 85%);
     height: 55vh;
     display: flex;
@@ -136,15 +126,16 @@ footer {
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
 }
-.mdLft {
+.lcflow {
     width: 50%;
     padding: 1rem;
 }
-.mdRgt {
+.rcflow {
     width: 50%;
     padding: 0 8rem;
 }
-.midDn {
+
+.content-users {
     box-shadow: 0px 0px 1rem hsl(220, 12%, 85%);
     height: 55vh;
     display: flex;
@@ -152,15 +143,15 @@ footer {
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
 }
-.usersL {
+.lcusers {
     width: 50%;
     padding: 0 8rem;
 }
-.usersR {
+.rcusers {
     width: 50%;
     padding: 1rem;
 }
-.mainF {
+.content-bottom {
     box-shadow: 0px 0px 0.1rem hsl(220, 12%, 85%);
     width: 50%;
     margin: 3rem auto 0;
@@ -171,7 +162,7 @@ footer {
     top: 4rem;
     background-color: white;
 }
-.mainF button {
+.content-bottom button {
     background-color: hsl(322, 100%, 66%);
     color: hsl(193, 100%, 96%);
     border: none;
@@ -179,11 +170,19 @@ footer {
     border-radius: 2rem;
     transition: background-color 2s ease;
 }
-.mainF button:hover {
+.content-bottom button:hover {
     background-color: hsl(322, 100%, 80%);
     transition: background-color 2s ease;
 }
 
+footer {
+    width: 100%;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0 2rem;
+}
 .ftop {
     width: 80%;
     margin: 1rem auto;
@@ -199,52 +198,52 @@ footer {
     display: flex;
     padding: 1rem;
 }
-.contact {
+.col1 {
     width: 40%;
     padding: 0 6rem 0 0;
 }
-.conRw {
+.col1-rows {
     margin-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: flex-start;
 }
-.conRw img {
+.col1-rows img {
     margin-right: 2rem;
     width: 1rem;
     height: 1rem;
 }
-.about {
+.col2 {
     width: 15%;
     display: flex;
     flex-direction: column;
     
 }
-.about a {
+.col2 a {
     text-decoration: none;
     color: hsl(193, 100%, 96%);
     margin-bottom: 1rem;
 }
-.career {
+.col3 {
     width: 15%;
     display: flex;
     flex-direction: column;
 }
-.career a {
+.col3 a {
     text-decoration: none;
     color: hsl(193, 100%, 96%);
     margin-bottom: 1rem;
 }
-.career a:hover, .col2 a:hover {
+.col3 a:hover, .col2 a:hover {
     text-decoration:underline;
 }
-.links {
+.col4 {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.links i {
+.col4 i {
     margin-right: 1rem;
     border: 1px solid hsl(193, 100%, 96%);
     border-radius: 50%;
@@ -255,12 +254,12 @@ footer {
     color: hsl(193, 100%, 96%);
     transition: color 3s, border 1s;
 }
-.links a i:hover {
+.col4 a i:hover {
     color: hsl(322, 100%, 66%);
     border: 1px solid hsl(322, 100%, 66%);
     cursor: pointer;
 }
-.links small i {
+.col4 small i {
     border: none;
     margin-right: 0;
     padding: 0.1rem 0.2rem;
@@ -276,23 +275,23 @@ footer {
         background-size: contain;
         padding-top: 0;
     }
-    .headT {
+    .htop {
         width: 90%;
     }
-    .headT button {
+    .htop button {
         padding: 0.5rem 1rem;
     }
-    .headB {
+    .hbottom {
         width: 90%;
         flex-direction: column;
         text-align: center;
     }
-    .botLft {
+    .hbottom-left {
         width: 90%;
         margin: 3rem auto;
         padding: 0;
     }
-    .botRgt {
+    .hbottom-right {
         width: 90%;
         margin-bottom: 3rem;
     }
@@ -303,84 +302,84 @@ footer {
     main img {
         margin: 0 auto;
     }
-    .mainT {
+    .content-grow {
         flex-direction: column-reverse;
         margin: 5rem auto 0;
         height: 100vh;
         width: 85%;
         justify-content: space-around;
     }
-    .mnLft {
+    .lcgrow {
         width: 70%;
         text-align: center;
         padding: 0;
     }
-    .mnRgt {
+    .rcgrow {
         width: 70%;
         margin-top: 2rem;
         padding: 0;
     }
-    .midUp {
+    .content-flow {
         flex-direction: column;
         margin: 5rem auto 0;
         height: 100vh;
         width: 85%;
         justify-content: space-around;
     }
-    .mdLft {
+    .lcflow {
         width: 70%;
         margin-top: 2rem;
         padding: 0;
     }
-    .mdRgt {
+    .rcflow {
         width: 70%;
         text-align: center;
         padding: 0;
     }
-    .midDn{
+    .content-users{
         flex-direction: column-reverse;
         margin: 5rem auto 0;
         height: 100vh;
         width: 85%;
         justify-content: space-around;
     }
-    .usersL {
+    .lcusers {
         width: 70%;
         text-align: center;
         padding: 0;
     }
-    .usersR {
+    .rcusers {
         width: 70%;
         margin-top: 2rem;
         padding: 0;
     }
-    .mainF {
+    .content-bottom {
         width: 65%;
     }
-    .footT {
+    .ftop {
         width: 85%;
     }
-    .footB {
+    .fbottom {
         width: 85%;
         flex-direction: column;
     }
-    .contact {
+    .col1 {
         padding: 0;
     }
-    .contact, .about, .career, .links {
+    .col1, .col2, .col3, .col4 {
         width: 85%;
         margin-bottom: 2rem;
     }
-    .links {
+    .col4 {
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 100%;
     }
-    .conRw img {
+    .col1-rows img {
         margin-top: 0.2rem;
     }
-    .links a i {
+    .col4 a i {
         margin-bottom: 1rem;
     }
 
